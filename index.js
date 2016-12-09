@@ -5,7 +5,7 @@ exports.basicLocator = function(host, defaultPort) {
   var hostname, port;
   if (hostnamePort.length > 1) {
     hostname = hostnamePort[0];
-    port = parseInt(hostnamePort[1]);
+    port = parseInt(hostnamePort[1], 10);
   } else {
     hostname = hostnamePort[0];
     port = defaultPort;
