@@ -1,5 +1,4 @@
 import * as Promise from 'any-promise';
-import { Readable } from 'stream';
 
 export interface Location {
   hostname: string;
@@ -16,7 +15,7 @@ export interface DatabaseRequest<T> {
 }
 
 export interface PlywoodRequester<T> {
-  (request: DatabaseRequest<T>): Readable;
+  (request: DatabaseRequest<T>): NodeJS.ReadableStream;
 }
 
 export function basicLocator(host: string, defaultPort: number): PlywoodLocator;
