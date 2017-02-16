@@ -1,6 +1,6 @@
 var Promise = require('any-promise');
 
-exports.hostToLocation = function hostToLocation(host, defaultPort) {
+function hostToLocation(host, defaultPort) {
   var hostnamePort = host.split(':');
   var hostname, port;
   if (hostnamePort.length > 1) {
@@ -14,7 +14,9 @@ exports.hostToLocation = function hostToLocation(host, defaultPort) {
     hostname: hostname,
     port: port
   };
-};
+}
+
+exports.hostToLocation = hostToLocation;
 
 exports.basicLocator = function(host, defaultPort) {
   var location = hostToLocation(host, defaultPort);
