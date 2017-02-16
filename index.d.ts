@@ -19,4 +19,6 @@ export interface PlywoodRequester<T> {
   (request: DatabaseRequest<T>): ReadableStream;
 }
 
+export function hostToLocation(host: string, defaultPort: number): Location;
+
 export function basicLocator(host: string, defaultPort: number): PlywoodLocator;

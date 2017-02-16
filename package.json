@@ -30,6 +30,6 @@
     "readable-stream": "^2.2.2"
   },
   "devDependencies": {
-    "tdi": "0.2.14"
+    "tdi": "0.2.17"
   }
 }
