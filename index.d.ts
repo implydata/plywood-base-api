@@ -37,3 +37,8 @@ export interface PlywoodRequester<T> {
 export function hostToLocation(host: string, defaultPort: number): Location;
 
 export function basicLocator(host: string, defaultPort: number): PlywoodLocator;
+
+export interface AuthToken {
+  type: string;
+  token?: string;
+}
