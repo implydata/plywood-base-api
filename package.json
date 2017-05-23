@@ -26,10 +26,9 @@
     "prepublish": "node_modules/.bin/tdi"
   },
   "dependencies": {
-    "any-promise": "^1.3.0",
-    "readable-stream": "^2.2.2"
+    "readable-stream": "^2.2.9"
   },
   "devDependencies": {
-    "tdi": "0.2.17"
+    "tdi": "0.3.4"
   }
 }
