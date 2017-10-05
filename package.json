@@ -23,12 +23,12 @@
     "index.d.ts"
   ],
   "scripts": {
-    "prepublish": "node_modules/.bin/tdi"
+    "prepare": "node_modules/.bin/tdi"
   },
   "dependencies": {
-    "readable-stream": "^2.2.9"
+    "readable-stream": "^2.3.3"
   },
   "devDependencies": {
-    "tdi": "0.3.4"
+    "tdi": "0.3.16"
   }
 }

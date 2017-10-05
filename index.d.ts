@@ -39,6 +39,6 @@ export function hostToLocation(host: string, defaultPort: number): Location;
 export function basicLocator(host: string, defaultPort: number): PlywoodLocator;
 
 export interface AuthToken {
-  type: string;
-  token?: string;
+  type: 'basic-auth' | 'imply-token-hmac';
+  [key: string]: string;
 }
