@@ -50,8 +50,12 @@ Possible values:
   implyToken: 'fw3423rfff434f34r43r'
   implyHmac: 'ff434f34'
 }
+{
+  type: 'bearer-auth'
+  implyIdentityToken: 'Bearer: abcd1234efgh5678'
+}
  */
 export interface AuthToken {
-  type: 'basic-auth' | 'imply-token-hmac';
+  type: 'basic-auth' | 'imply-token-hmac' | 'bearer-auth';
   [key: string]: string;
 }
