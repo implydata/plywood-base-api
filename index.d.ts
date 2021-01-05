@@ -52,7 +52,7 @@ Possible values:
 }
 {
   type: 'bearer-auth'
-  implyIdentityToken: 'Bearer: abcd1234efgh5678'
+  implyIdentityToken: 'Bearer abcd1234efgh5678'
 }
  */
 export interface AuthToken {
