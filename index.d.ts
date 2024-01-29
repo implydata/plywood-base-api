@@ -56,6 +56,7 @@ Possible values:
 }
  */
 export type AuthToken = BasicAuthToken | HmacAuthToken | BearerAuthToken;
+
 export interface BasicAuthToken {
   type: 'basic-auth',
   username: string,
