@@ -65,15 +65,18 @@ export interface BasicAuthToken {
     connection: string,
     source: string,
   }[],
+  priority: number,
 }
 
 export interface HmacAuthToken {
   type: 'imply-token-hmac',
   implyToken: string,
   implyHmac: string,
+  priority: number,
 }
 
 export interface BearerAuthToken {
   type: 'bearer-auth',
   implyIdentityToken: string,
+  priority: number,
 }
