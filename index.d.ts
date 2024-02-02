@@ -61,7 +61,10 @@ export interface BasicAuthToken {
   type: 'basic-auth',
   username: string,
   password: string,
-  targets?: string[],
+  targets?: {
+    connection: string,
+    source: string,
+  }[],
 }
 
 export interface HmacAuthToken {
